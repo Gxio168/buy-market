@@ -42,7 +42,7 @@ public class MarketTradeController implements IMarketTradeService {
     @Override
     public Response<LockMarketPayOrderResponseDTO> lockMarketPayOrder(LockMarketPayOrderRequestDTO lockMarketPayOrderRequestDTO) {
         try {
-            // 参数
+            // 1、参数校验
             String userId = lockMarketPayOrderRequestDTO.getUserId();
             String source = lockMarketPayOrderRequestDTO.getSource();
             String channel = lockMarketPayOrderRequestDTO.getChannel();
@@ -60,7 +60,7 @@ public class MarketTradeController implements IMarketTradeService {
                         .build();
             }
 
-            // 查询 outTradeNo 是否已经存在交易记录
+            // 2、查询 outTradeNo 是否已经存在交易记录
             MarketPayOrderEntity marketPayOrderEntity = tradeOrderService.queryNoPayMarketPayOrderByOutTradeNo(userId, outTradeNo);
             if (null != marketPayOrderEntity) {
                 LockMarketPayOrderResponseDTO lockMarketPayOrderResponseDTO = LockMarketPayOrderResponseDTO.builder()
@@ -77,7 +77,7 @@ public class MarketTradeController implements IMarketTradeService {
                         .build();
             }
 
-            // 判断拼团锁单是否完成了目标
+            // 3、判断拼团锁单是否完成了目标
             if (null != teamId) {
                 GroupBuyProgressVO groupBuyProgressVO = tradeOrderService.queryGroupBuyProgress(teamId);
                 if (null != groupBuyProgressVO && Objects.equals(groupBuyProgressVO.getTargetCount(), groupBuyProgressVO.getLockCount())) {

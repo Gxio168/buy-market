@@ -1,6 +1,5 @@
 package cn.bugstack.domain.activity.service.trial.node;
 
-import cn.bugstack.domain.activity.adapter.repository.IActivityRepository;
 import cn.bugstack.domain.activity.model.entity.MarketProductEntity;
 import cn.bugstack.domain.activity.model.entity.TrialBalanceEntity;
 import cn.bugstack.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
@@ -8,8 +7,6 @@ import cn.bugstack.domain.activity.model.valobj.SkuVO;
 import cn.bugstack.domain.activity.service.discount.IDiscountCalculateService;
 import cn.bugstack.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
 import cn.bugstack.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
-import cn.bugstack.domain.activity.service.trial.thread.QueryGroupBuyActivityDiscountVOThreadTask;
-import cn.bugstack.domain.activity.service.trial.thread.QuerySkuVOFromDBThreadTask;
 import cn.bugstack.types.design.framework.tree.StrategyHandler;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
@@ -20,7 +17,6 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.util.Map;
-import java.util.concurrent.*;
 
 @Slf4j
 @Service
@@ -56,8 +52,9 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
             log.info("不存在{}类型的折扣计算服务，支持类型为:{}", groupBuyDiscount.getMarketPlan(), JSON.toJSONString(discountCalculateServiceMap.keySet()));
             throw new AppException(ResponseCode.E0001.getCode(), ResponseCode.E0001.getInfo());
         }
-        BigDecimal deductionPrice = discountCalculateService.calculate(requestParameter.getUserId(), skuVO.getOriginalPrice(), groupBuyDiscount);
-        dynamicContext.setDeductionPrice(deductionPrice);
+        BigDecimal payPrice = discountCalculateService.calculate(requestParameter.getUserId(), skuVO.getOriginalPrice(), groupBuyDiscount);
+        dynamicContext.setDeductionPrice(skuVO.getOriginalPrice().subtract(payPrice));
+        dynamicContext.setPayPrice(payPrice);
         return router(requestParameter, dynamicContext);
     }
 
