@@ -2223,3 +2223,867 @@ Caused by: java.lang.IllegalStateException: Property 'configuration' and 'config
 26-03-12.15:48:57.073 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
 26-03-12.15:48:57.098 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 26-03-12.15:48:57.104 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:50:18.442 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 8516 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:50:18.442 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:50:18.866 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:50:18.866 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:50:18.961 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:50:18.963 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:50:18.983 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:50:19.050 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:50:19.051 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:50:19.543 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:50:19.586 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:50:19.592 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:50:19.597 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:50:19.603 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:50:19.608 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:50:19.612 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:50:19.616 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:50:20.007 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:50:20.178 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:50:20.273 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:50:20.282 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:50:20.969 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:50:21.430 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:50:21.472 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.296 seconds (JVM running for 3.924)
+26-03-12.15:50:21.727 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:50:21.742 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:50:21.742 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:50:21.746 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57273659] was not registered for synchronization because synchronization is not active
+26-03-12.15:50:21.746 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4efbf3f6] was not registered for synchronization because synchronization is not active
+26-03-12.15:50:21.751 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:50:22.081 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:50:22.083 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@754426697 wrapping com.mysql.cj.jdbc.ConnectionImpl@5644cd2] will not be managed by Spring
+26-03-12.15:50:22.096 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1803140070 wrapping com.mysql.cj.jdbc.ConnectionImpl@90f8b08] will not be managed by Spring
+26-03-12.15:50:22.110 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4efbf3f6]
+26-03-12.15:50:22.110 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57273659]
+26-03-12.15:50:22.112 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:50:22.112 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6db633a3] was not registered for synchronization because synchronization is not active
+26-03-12.15:50:22.112 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2116229217 wrapping com.mysql.cj.jdbc.ConnectionImpl@90f8b08] will not be managed by Spring
+26-03-12.15:50:22.114 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6db633a3]
+26-03-12.15:50:22.114 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:50:22.114 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad42326] was not registered for synchronization because synchronization is not active
+26-03-12.15:50:22.114 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1253010733 wrapping com.mysql.cj.jdbc.ConnectionImpl@90f8b08] will not be managed by Spring
+26-03-12.15:50:22.115 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad42326]
+26-03-12.15:50:27.728 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:50:27.741 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:50:27.741 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:50:27.741 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:50:27.741 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:50:27.746 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:50:27.768 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:50:27.781 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:53:50.290 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 28900 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:53:50.291 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:53:50.720 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:53:50.720 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:53:50.811 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:53:50.813 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:53:50.834 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:53:50.901 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:53:50.902 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:53:51.396 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:53:51.436 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:53:51.442 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:53:51.447 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:53:51.453 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:53:51.460 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:53:51.464 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:53:51.469 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:53:51.850 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:53:52.013 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:53:52.109 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:53:52.120 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:53:52.824 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:53:53.254 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:53:53.292 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.271 seconds (JVM running for 3.916)
+26-03-12.15:53:53.533 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:53:53.546 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:53:53.546 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:53:53.549 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a92899b] was not registered for synchronization because synchronization is not active
+26-03-12.15:53:53.549 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d1aa1ef] was not registered for synchronization because synchronization is not active
+26-03-12.15:53:53.556 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:53:53.897 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:53:53.898 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1033984896 wrapping com.mysql.cj.jdbc.ConnectionImpl@3fd3422] will not be managed by Spring
+26-03-12.15:53:53.912 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@6329618 wrapping com.mysql.cj.jdbc.ConnectionImpl@2f63de92] will not be managed by Spring
+26-03-12.15:53:53.926 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a92899b]
+26-03-12.15:53:53.926 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d1aa1ef]
+26-03-12.15:53:53.928 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:53:53.928 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34cb89eb] was not registered for synchronization because synchronization is not active
+26-03-12.15:53:53.928 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1254458328 wrapping com.mysql.cj.jdbc.ConnectionImpl@2f63de92] will not be managed by Spring
+26-03-12.15:53:53.930 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34cb89eb]
+26-03-12.15:53:53.930 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:53:53.930 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@171bc859] was not registered for synchronization because synchronization is not active
+26-03-12.15:53:53.930 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1915486089 wrapping com.mysql.cj.jdbc.ConnectionImpl@2f63de92] will not be managed by Spring
+26-03-12.15:53:53.932 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@171bc859]
+26-03-12.15:53:53.933 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:53:53.943 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:53:53.943 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:53:53.943 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:53:53.943 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:53:53.948 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:53:53.967 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:53:53.970 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:54:06.544 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 28396 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:54:06.544 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:54:06.977 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:54:06.978 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:54:07.069 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:54:07.071 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:54:07.091 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:54:07.156 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:54:07.633 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:54:07.673 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:54:07.679 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:54:07.683 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:54:07.689 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:54:07.693 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:54:07.697 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:54:07.701 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:54:08.102 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:54:08.263 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:54:08.348 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:08.357 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:09.188 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:54:09.683 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:54:09.721 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.448 seconds (JVM running for 4.11)
+26-03-12.15:54:13.292 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 27020 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:54:13.292 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:54:13.713 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:54:13.713 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:54:13.807 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:54:13.809 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:54:13.831 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+26-03-12.15:54:13.897 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:54:13.898 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:54:13.899 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:54:14.382 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:54:14.421 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:54:14.427 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:54:14.431 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:54:14.437 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:54:14.441 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:54:14.444 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:54:14.449 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:54:14.830 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:54:14.999 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:54:15.091 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:15.101 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:15.797 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:54:16.284 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:54:16.324 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.307 seconds (JVM running for 3.94)
+26-03-12.15:54:16.593 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:16.607 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:16.607 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:16.610 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e74755a] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:16.610 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7579e407] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:16.617 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:54:17.243 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:54:17.246 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@407943482 wrapping com.mysql.cj.jdbc.ConnectionImpl@341d8f8d] will not be managed by Spring
+26-03-12.15:54:17.266 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@65393195 wrapping com.mysql.cj.jdbc.ConnectionImpl@51bbdc26] will not be managed by Spring
+26-03-12.15:54:17.288 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e74755a]
+26-03-12.15:54:17.288 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7579e407]
+26-03-12.15:54:17.292 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:17.292 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e099d6a] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:17.292 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1433445868 wrapping com.mysql.cj.jdbc.ConnectionImpl@51bbdc26] will not be managed by Spring
+26-03-12.15:54:17.295 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e099d6a]
+26-03-12.15:54:17.295 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:17.295 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4765fe6e] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:17.295 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1834536851 wrapping com.mysql.cj.jdbc.ConnectionImpl@51bbdc26] will not be managed by Spring
+26-03-12.15:54:17.297 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4765fe6e]
+26-03-12.15:54:17.299 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:54:17.315 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:17.315 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:54:17.315 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:17.316 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:17.324 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:54:17.362 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:54:17.375 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:54:34.698 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 29320 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:54:34.699 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:54:35.143 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:54:35.143 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:54:35.242 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:54:35.244 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:54:35.264 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:54:35.328 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:54:35.329 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:54:35.834 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:54:35.880 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:54:35.886 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:54:35.891 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:54:35.896 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:54:35.901 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:54:35.905 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:54:35.908 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:54:36.276 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:54:36.446 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:54:36.539 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:36.548 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:37.332 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:54:37.857 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:54:37.893 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.476 seconds (JVM running for 4.117)
+26-03-12.15:54:38.134 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:38.152 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:38.152 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:38.155 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@236523a5] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:38.155 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@765190b3] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:38.162 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:54:38.489 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:54:38.492 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@577919903 wrapping com.mysql.cj.jdbc.ConnectionImpl@1935bc3e] will not be managed by Spring
+26-03-12.15:54:38.505 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2025033626 wrapping com.mysql.cj.jdbc.ConnectionImpl@242bb446] will not be managed by Spring
+26-03-12.15:54:38.519 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@236523a5]
+26-03-12.15:54:38.519 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@765190b3]
+26-03-12.15:54:38.521 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:38.521 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1578c47c] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:38.521 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1569536531 wrapping com.mysql.cj.jdbc.ConnectionImpl@1935bc3e] will not be managed by Spring
+26-03-12.15:54:38.523 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1578c47c]
+26-03-12.15:54:38.523 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:38.523 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cbbaa37] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:38.523 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1048525728 wrapping com.mysql.cj.jdbc.ConnectionImpl@1935bc3e] will not be managed by Spring
+26-03-12.15:54:38.524 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cbbaa37]
+26-03-12.15:54:38.526 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:54:38.536 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:38.536 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:54:38.537 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:38.538 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:38.542 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:54:38.566 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:54:38.570 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:54:44.738 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 11320 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:54:44.738 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:54:45.163 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:54:45.163 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:54:45.256 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:54:45.258 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:54:45.278 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:54:45.344 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:54:45.346 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:54:45.347 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:54:45.347 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:54:45.347 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:54:45.347 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:54:45.347 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:54:45.347 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:54:45.844 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:54:45.887 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:54:45.894 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:54:45.899 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:54:45.905 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:54:45.909 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:54:45.913 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:54:45.918 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:54:46.286 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:54:46.462 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:54:46.554 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:46.563 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:47.270 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:54:47.700 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:54:47.737 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.299 seconds (JVM running for 3.974)
+26-03-12.15:54:51.489 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 8592 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:54:51.489 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:54:51.856 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:54:51.856 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:54:51.974 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:54:51.976 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:54:51.999 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+26-03-12.15:54:52.069 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:54:52.069 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:54:52.069 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:54:52.070 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:54:52.070 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:54:52.070 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:54:52.070 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:54:52.070 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:54:52.071 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:54:52.546 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:54:52.584 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:54:52.595 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:54:52.599 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:54:52.604 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:54:52.610 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:54:52.615 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:54:52.618 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:54:52.841 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:54:52.986 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:54:53.085 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:53.095 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:54:53.630 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:54:54.018 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:54:54.049 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.807 seconds (JVM running for 3.338)
+26-03-12.15:54:54.240 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:54.252 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:54.252 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:54.255 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c164996] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:54.255 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bbcaff] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:54.260 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:54:54.554 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:54:54.556 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@901729361 wrapping com.mysql.cj.jdbc.ConnectionImpl@1fe5617e] will not be managed by Spring
+26-03-12.15:54:54.568 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@533580621 wrapping com.mysql.cj.jdbc.ConnectionImpl@222c5b63] will not be managed by Spring
+26-03-12.15:54:54.580 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c164996]
+26-03-12.15:54:54.580 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bbcaff]
+26-03-12.15:54:54.582 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:54.582 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c1ae830] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:54.582 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1526202853 wrapping com.mysql.cj.jdbc.ConnectionImpl@222c5b63] will not be managed by Spring
+26-03-12.15:54:54.583 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c1ae830]
+26-03-12.15:54:54.583 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:54:54.583 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e6c69a2] was not registered for synchronization because synchronization is not active
+26-03-12.15:54:54.583 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@904681271 wrapping com.mysql.cj.jdbc.ConnectionImpl@222c5b63] will not be managed by Spring
+26-03-12.15:54:54.584 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e6c69a2]
+26-03-12.15:54:54.586 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:54:54.594 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:54.595 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:54:54.595 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:54.595 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:54:54.599 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:54:54.616 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:54:54.618 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:54:58.580 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 8584 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:54:58.581 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:54:58.992 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:54:58.992 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:54:59.081 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:54:59.083 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:54:59.103 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:54:59.169 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:54:59.170 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:54:59.642 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:54:59.681 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:54:59.687 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:54:59.690 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:54:59.696 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:54:59.702 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:54:59.706 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:54:59.711 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:55:00.098 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:55:00.279 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:55:00.374 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:55:00.384 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:55:01.504 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:55:02.359 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:55:02.427 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.115 seconds (JVM running for 4.732)
+26-03-12.15:55:02.797 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:02.811 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:02.811 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:02.814 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@efa13c5] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:02.814 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1322022] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:02.822 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:55:03.235 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:55:03.240 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@436417418 wrapping com.mysql.cj.jdbc.ConnectionImpl@6d6a8edf] will not be managed by Spring
+26-03-12.15:55:03.256 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@941670174 wrapping com.mysql.cj.jdbc.ConnectionImpl@63f4715d] will not be managed by Spring
+26-03-12.15:55:03.274 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@efa13c5]
+26-03-12.15:55:03.274 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1322022]
+26-03-12.15:55:03.276 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:03.276 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49ac2fe8] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:03.276 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1801714533 wrapping com.mysql.cj.jdbc.ConnectionImpl@6d6a8edf] will not be managed by Spring
+26-03-12.15:55:03.278 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49ac2fe8]
+26-03-12.15:55:03.278 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:03.278 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32ee3784] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:03.278 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1576911210 wrapping com.mysql.cj.jdbc.ConnectionImpl@6d6a8edf] will not be managed by Spring
+26-03-12.15:55:03.279 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32ee3784]
+26-03-12.15:55:03.281 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:55:03.292 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:03.292 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:55:03.292 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:03.293 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:03.298 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:55:03.320 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:55:03.325 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:55:08.983 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 27368 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:55:08.983 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:55:09.407 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:55:09.408 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:55:09.497 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:55:09.499 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:55:09.519 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:55:09.584 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:55:09.586 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:55:10.076 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:55:10.117 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:55:10.123 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:55:10.128 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:55:10.132 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:55:10.137 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:55:10.140 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:55:10.144 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:55:10.522 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:55:10.684 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:55:10.774 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:55:10.783 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:55:11.454 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:55:11.899 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:55:11.937 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.22 seconds (JVM running for 3.849)
+26-03-12.15:55:12.180 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:12.196 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:12.196 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:12.198 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a5d4b04] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:12.198 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@389f7451] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:12.204 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:55:12.528 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:55:12.530 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@953356440 wrapping com.mysql.cj.jdbc.ConnectionImpl@65f83839] will not be managed by Spring
+26-03-12.15:55:12.543 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1082353591 wrapping com.mysql.cj.jdbc.ConnectionImpl@38149250] will not be managed by Spring
+26-03-12.15:55:12.559 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a5d4b04]
+26-03-12.15:55:12.559 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@389f7451]
+26-03-12.15:55:12.561 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:12.562 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50585afc] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:12.562 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2128189052 wrapping com.mysql.cj.jdbc.ConnectionImpl@65f83839] will not be managed by Spring
+26-03-12.15:55:12.562 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50585afc]
+26-03-12.15:55:12.562 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:55:12.562 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3459e5f0] was not registered for synchronization because synchronization is not active
+26-03-12.15:55:12.562 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@287690011 wrapping com.mysql.cj.jdbc.ConnectionImpl@65f83839] will not be managed by Spring
+26-03-12.15:55:12.565 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3459e5f0]
+26-03-12.15:55:12.566 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:55:12.576 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:12.576 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:55:12.576 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:12.576 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:55:12.580 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:55:12.600 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:55:12.604 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:56:20.997 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 9756 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:56:20.997 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:56:21.440 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:56:21.440 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:56:21.531 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:56:21.533 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:56:21.554 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:56:21.621 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:56:21.622 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:56:21.623 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:56:22.160 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:56:22.202 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:56:22.208 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:56:22.214 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:56:22.220 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:56:22.225 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:56:22.228 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:56:22.232 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:56:22.620 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:56:22.784 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:56:22.885 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:56:22.904 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:56:23.566 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:56:24.029 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:56:24.065 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.345 seconds (JVM running for 3.993)
+26-03-12.15:56:24.322 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:56:24.337 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:56:24.337 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:56:24.339 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fc83ad4] was not registered for synchronization because synchronization is not active
+26-03-12.15:56:24.339 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b9fe14e] was not registered for synchronization because synchronization is not active
+26-03-12.15:56:24.344 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.15:56:24.680 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.15:56:24.682 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1651515863 wrapping com.mysql.cj.jdbc.ConnectionImpl@36adfad0] will not be managed by Spring
+26-03-12.15:56:24.695 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1740307712 wrapping com.mysql.cj.jdbc.ConnectionImpl@2224a58e] will not be managed by Spring
+26-03-12.15:56:24.712 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b9fe14e]
+26-03-12.15:56:24.712 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fc83ad4]
+26-03-12.15:56:24.714 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:56:24.714 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@390f8b6] was not registered for synchronization because synchronization is not active
+26-03-12.15:56:24.714 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@931196283 wrapping com.mysql.cj.jdbc.ConnectionImpl@2224a58e] will not be managed by Spring
+26-03-12.15:56:24.716 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@390f8b6]
+26-03-12.15:56:24.716 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.15:56:24.716 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3942cedc] was not registered for synchronization because synchronization is not active
+26-03-12.15:56:24.716 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1479025593 wrapping com.mysql.cj.jdbc.ConnectionImpl@2224a58e] will not be managed by Spring
+26-03-12.15:56:24.717 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3942cedc]
+26-03-12.15:56:24.719 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.15:56:24.729 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:56:24.729 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.15:56:24.729 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:56:24.730 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.15:56:24.735 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.15:56:24.754 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.15:56:24.758 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.15:57:08.263 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 6524 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.15:57:08.264 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-03-12.15:57:08.730 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.15:57:08.730 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.15:57:08.827 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.15:57:08.829 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.15:57:08.848 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.15:57:08.914 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.15:57:08.916 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.15:57:09.436 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.15:57:09.481 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.15:57:09.487 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.15:57:09.492 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.15:57:09.497 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.15:57:09.501 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.15:57:09.506 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.15:57:09.509 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.15:57:09.875 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.15:57:10.039 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.15:57:10.129 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:57:10.139 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.15:57:10.802 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.15:57:11.257 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.15:57:11.294 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.315 seconds (JVM running for 3.995)
+26-03-12.16:14:45.164 [main            ] INFO  DCCControllerTest      - Starting DCCControllerTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 30696 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.16:14:45.164 [main            ] INFO  DCCControllerTest      - The following 1 profile is active: "dev"
+26-03-12.16:14:45.606 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.16:14:45.607 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.16:14:45.697 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.16:14:45.699 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.16:14:45.721 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.16:14:45.789 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.16:14:45.790 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.16:14:45.922 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$de8540c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:14:46.145 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:14:46.495 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.16:14:46.658 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.16:14:46.768 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.16:14:46.777 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.16:14:46.820 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:14:47.031 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.16:14:47.073 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.16:14:47.078 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.16:14:47.082 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.16:14:47.088 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.16:14:47.094 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.16:14:47.098 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.16:14:47.102 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.16:14:47.827 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.16:14:48.282 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.16:14:48.320 [main            ] INFO  DCCControllerTest      - Started DCCControllerTest in 3.437 seconds (JVM running for 4.11)
+26-03-12.16:14:48.463 [main            ] INFO  DCCController          - DCC 动态配置值变更 key:downgradeSwitch value:1
+26-03-12.16:14:48.468 [redisson-3-7    ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_downgradeSwitch 1
+26-03-12.16:16:20.292 [main            ] INFO  DCCControllerTest      - Starting DCCControllerTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 28408 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.16:16:20.293 [main            ] INFO  DCCControllerTest      - The following 1 profile is active: "dev"
+26-03-12.16:16:20.735 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.16:16:20.735 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.16:16:20.841 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.16:16:20.844 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.16:16:20.864 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.16:16:20.931 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.16:16:20.932 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.16:16:20.933 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.16:16:21.061 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$88c12b89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:16:21.267 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:16:21.594 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.16:16:21.754 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.16:16:21.859 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.16:16:21.868 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.16:16:21.907 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:16:22.117 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.16:16:22.163 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.16:16:22.169 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.16:16:22.175 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.16:16:22.180 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.16:16:22.184 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.16:16:22.188 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.16:16:22.193 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.16:16:22.890 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.16:16:23.343 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.16:16:23.384 [main            ] INFO  DCCControllerTest      - Started DCCControllerTest in 3.384 seconds (JVM running for 4.048)
+26-03-12.16:16:23.537 [main            ] INFO  DCCController          - DCC 动态配置值变更 key:downgradeSwitch value:1
+26-03-12.16:16:23.544 [redisson-3-7    ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_downgradeSwitch 1
+26-03-12.16:16:24.646 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:24.646 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:24.650 [main            ] INFO  SwitchNode             - 拼团活动降级拦截 xiaofuge
+26-03-12.16:16:39.399 [main            ] INFO  DCCControllerTest      - Starting DCCControllerTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 27956 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.16:16:39.399 [main            ] INFO  DCCControllerTest      - The following 1 profile is active: "dev"
+26-03-12.16:16:39.842 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.16:16:39.842 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.16:16:39.940 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.16:16:39.943 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.16:16:39.962 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.16:16:40.029 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.16:16:40.030 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.16:16:40.158 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$e8d434af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:16:40.369 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:16:40.706 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.16:16:40.887 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.16:16:40.989 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.16:16:41.001 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.16:16:41.049 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.16:16:41.258 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.16:16:41.304 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.16:16:41.310 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.16:16:41.316 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.16:16:41.322 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.16:16:41.328 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.16:16:41.332 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.16:16:41.336 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.16:16:42.567 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.16:16:43.132 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.16:16:43.174 [main            ] INFO  DCCControllerTest      - Started DCCControllerTest in 4.036 seconds (JVM running for 4.686)
+26-03-12.16:16:43.364 [main            ] INFO  DCCController          - DCC 动态配置值变更 key:downgradeSwitch value:0
+26-03-12.16:16:43.372 [redisson-3-7    ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_downgradeSwitch 0
+26-03-12.16:16:44.489 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:44.489 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:44.501 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.16:16:44.501 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.16:16:44.504 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@243e4347] was not registered for synchronization because synchronization is not active
+26-03-12.16:16:44.504 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6146eed5] was not registered for synchronization because synchronization is not active
+26-03-12.16:16:44.511 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-12.16:16:44.844 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-12.16:16:44.847 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@872158131 wrapping com.mysql.cj.jdbc.ConnectionImpl@7a53b579] will not be managed by Spring
+26-03-12.16:16:44.859 [pool-2-thread-2 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@690971727 wrapping com.mysql.cj.jdbc.ConnectionImpl@346a2058] will not be managed by Spring
+26-03-12.16:16:44.873 [pool-2-thread-2 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6146eed5]
+26-03-12.16:16:44.873 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@243e4347]
+26-03-12.16:16:44.876 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.16:16:44.876 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33d4ed0c] was not registered for synchronization because synchronization is not active
+26-03-12.16:16:44.876 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@851534132 wrapping com.mysql.cj.jdbc.ConnectionImpl@7a53b579] will not be managed by Spring
+26-03-12.16:16:44.878 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33d4ed0c]
+26-03-12.16:16:44.878 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Creating a new SqlSession
+26-03-12.16:16:44.878 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2ca688] was not registered for synchronization because synchronization is not active
+26-03-12.16:16:44.878 [pool-2-thread-1 ] DEBUG SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1350419528 wrapping com.mysql.cj.jdbc.ConnectionImpl@7a53b579] will not be managed by Spring
+26-03-12.16:16:44.879 [pool-2-thread-1 ] DEBUG SqlSessionUtils        - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2ca688]
+26-03-12.16:16:44.881 [main            ] INFO  TagNode                - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-03-12.16:16:44.884 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:44.885 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算:0
+26-03-12.16:16:44.885 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:44.885 [main            ] INFO  DCCControllerTest      - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-03-12.16:16:44.890 [main            ] INFO  DCCControllerTest      - 返回结果:{"deductionPrice":90.00,"endTime":1733566780000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733566780000,"targetCount":1}
+26-03-12.16:16:44.898 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-12.16:16:44.902 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
