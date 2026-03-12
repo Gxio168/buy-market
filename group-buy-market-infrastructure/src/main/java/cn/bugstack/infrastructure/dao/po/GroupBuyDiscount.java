@@ -1,20 +1,25 @@
 package cn.bugstack.infrastructure.dao.po;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 折扣配置
+ * @create 2024-12-07 10:06
+ */
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class GroupBuyDiscount {
+
     /**
-     * 主键ID (自增)
+     * 自增ID
      */
     private Long id;
 
@@ -34,12 +39,12 @@ public class GroupBuyDiscount {
     private String discountDesc;
 
     /**
-     * 折扣类型 (0:base, 1:tag)
+     * 折扣类型（0:base、1:tag）
      */
-    private Byte discountType;
+    private Integer discountType;
 
     /**
-     * 营销优惠计划 (ZJ:直减、MJ:满减、N元购)
+     * 营销优惠计划（ZJ:直减、MJ:满减、N元购）
      */
     private String marketPlan;
 
@@ -56,10 +61,11 @@ public class GroupBuyDiscount {
     /**
      * 创建时间
      */
-    private LocalDateTime createTime;
+    private Date createTime;
 
     /**
      * 更新时间
      */
-    private LocalDateTime updateTime;
+    private Date updateTime;
+
 }
