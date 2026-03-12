@@ -1,11 +1,9 @@
 package cn.bugstack.domain.activity.model.valobj;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.time.LocalDateTime;
+
+import java.util.Date;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -65,11 +63,11 @@ public class GroupBuyActivityDiscountVO {
     /**
      * 活动开始时间
      */
-    private LocalDateTime startTime;
+    private Date startTime;
     /**
      * 活动结束时间
      */
-    private LocalDateTime endTime;
+    private Date endTime;
     /**
      * 人群标签规则标识
      */

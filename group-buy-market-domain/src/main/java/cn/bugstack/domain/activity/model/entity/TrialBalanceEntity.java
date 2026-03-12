@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 
 @Data
@@ -37,11 +38,11 @@ public class TrialBalanceEntity {
     /**
      * 拼团开始时间
      */
-    private LocalDateTime startTime;
+    private Date startTime;
     /**
      * 拼团结束时间
      */
-    private LocalDateTime endTime;
+    private Date endTime;
     /**
      * 是否可见拼团
      */

@@ -9,5 +9,5 @@ import java.util.List;
 public interface IGroupBuyActivityDao {
     List<GroupBuyActivity> queryGroupBuyActivityList();
 
-    GroupBuyActivity queryValidGroupBuyActivity(GroupBuyActivity groupBuyActivity);
+    GroupBuyActivity queryValidGroupBuyActivityId(Long activityId);
 }
