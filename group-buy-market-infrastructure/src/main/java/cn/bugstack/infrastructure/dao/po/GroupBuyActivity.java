@@ -47,7 +47,7 @@ public class GroupBuyActivity {
     /**
      * 拼团方式 (0自动成团、1达成目标拼团)
      */
-    private Byte groupType;
+    private Integer groupType;
 
     /**
      * 拼团次数限制
@@ -67,7 +67,7 @@ public class GroupBuyActivity {
     /**
      * 活动状态 (0创建、1生效、2过期、3废弃)
      */
-    private Byte status;
+    private Integer status;
 
     /**
      * 活动开始时间

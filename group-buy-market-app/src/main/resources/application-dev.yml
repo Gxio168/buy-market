@@ -39,4 +39,5 @@ mybatis:
 logging:
   level:
     root: info
+    org.mybatis: DEBUG
   config: classpath:logback-spring.xml
