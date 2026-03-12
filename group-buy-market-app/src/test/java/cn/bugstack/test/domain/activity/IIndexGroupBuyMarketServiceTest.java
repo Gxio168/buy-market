@@ -33,6 +33,27 @@ public class IIndexGroupBuyMarketServiceTest {
         log.info("返回结果:{}", JSON.toJSONString(trialBalanceEntity));
     }
 
+    /**
+     * 测试不在人群标签中
+     * @throws Exception
+     */
+    @Test
+    public void test_indexMarketTrial_no_tag() throws Exception {
+        MarketProductEntity marketProductEntity = new MarketProductEntity();
+        marketProductEntity.setUserId("xiaofuge");
+        marketProductEntity.setSource("s01");
+        marketProductEntity.setChannel("c01");
+        marketProductEntity.setGoodsId("9890001");
+
+        TrialBalanceEntity trialBalanceEntity = indexGroupBuyMarketService.indexMarketTrial(marketProductEntity);
+        log.info("请求参数:{}", JSON.toJSONString(marketProductEntity));
+        log.info("返回结果:{}", JSON.toJSONString(trialBalanceEntity));
+    }
+
+    /**
+     * 测试不存在活动报错
+     * @throws Exception
+     */
     @Test
     public void test_indexMarketTrial_error() throws Exception {
         MarketProductEntity marketProductEntity = new MarketProductEntity();

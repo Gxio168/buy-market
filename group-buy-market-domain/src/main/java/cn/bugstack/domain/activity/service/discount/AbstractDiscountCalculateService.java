@@ -1,5 +1,6 @@
 package cn.bugstack.domain.activity.service.discount;
 
+import cn.bugstack.domain.activity.adapter.repository.IActivityRepository;
 import cn.bugstack.domain.activity.model.valobj.DiscountTypeEnum;
 import cn.bugstack.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import org.redisson.api.RBitSet;
@@ -8,7 +9,8 @@ import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 public abstract class AbstractDiscountCalculateService implements IDiscountCalculateService {
-
+    @Resource
+    private IActivityRepository activityRepository;
 
     @Override
     public BigDecimal calculate(String userId, BigDecimal originalPrice, GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount) {
@@ -22,8 +24,7 @@ public abstract class AbstractDiscountCalculateService implements IDiscountCalcu
     }
 
     private boolean filterTagId(String userId, String tagId) {
-        // todo xiaofuge 后续开发这部分
-        return true;
+        return activityRepository.isTagCrowdRange(userId, tagId);
     }
 
     protected abstract BigDecimal doCalculate(BigDecimal originalPrice, GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount);

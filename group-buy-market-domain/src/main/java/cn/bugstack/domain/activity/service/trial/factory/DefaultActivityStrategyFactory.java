@@ -40,5 +40,9 @@ public class DefaultActivityStrategyFactory {
         private SkuVO skuVO;
         // 折扣价格
         private BigDecimal deductionPrice;
+        // 是否可见
+        private boolean visible;
+        // 是否可用
+        private boolean enable;
     }
 }
