@@ -3662,3 +3662,230 @@ java.lang.NullPointerException: null
 26-03-12.17:24:57.917 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"721567963675","source":"s01","teamId":"00031984","userId":"xiaofuge"} res:{"code":"0000","data":{"deductionPrice":90.00,"orderId":"388469848166","tradeOrderStatus":0},"info":"成功"}
 26-03-12.17:24:57.926 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 26-03-12.17:24:57.929 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-12.20:18:37.219 [main            ] INFO  Link01Test             - Starting Link01Test using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 28140 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.20:18:37.220 [main            ] INFO  Link01Test             - The following 1 profile is active: "dev"
+26-03-12.20:18:37.671 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.20:18:37.671 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.20:18:37.767 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.20:18:37.769 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.20:18:37.795 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+26-03-12.20:18:37.867 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.20:18:37.867 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderListDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.20:18:37.868 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderListDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderListDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderListDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.20:18:37.869 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.20:18:38.000 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$bd2a406d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:18:38.219 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:18:38.546 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.20:18:38.707 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.20:18:38.801 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:18:38.810 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:18:38.850 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:18:39.062 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.20:18:39.103 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.20:18:39.110 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.20:18:39.114 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.20:18:39.120 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.20:18:39.124 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.20:18:39.128 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_list_mapper.xml]'
+26-03-12.20:18:39.134 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_mapper.xml]'
+26-03-12.20:18:39.138 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.20:18:39.141 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.20:18:39.828 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.20:18:40.261 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.20:18:40.300 [main            ] INFO  Link01Test             - Started Link01Test in 3.363 seconds (JVM running for 4.042)
+26-03-12.20:18:40.446 [main            ] INFO  RuleLogic101           - link model01 RuleLogic101
+26-03-12.20:18:40.446 [main            ] INFO  RuleLogic102           - link model01 RuleLogic102
+26-03-12.20:18:40.536 [main            ] INFO  Link01Test             - 测试结果:"link model01 单实例链"
+26-03-12.20:31:39.731 [main            ] INFO  Link02Test             - Starting Link02Test using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 4640 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.20:31:39.731 [main            ] INFO  Link02Test             - The following 1 profile is active: "dev"
+26-03-12.20:31:40.128 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.20:31:40.128 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.20:31:40.231 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.20:31:40.234 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.20:31:40.263 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderListDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.20:31:40.329 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderListDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderListDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderListDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.20:31:40.330 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.20:31:40.476 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$e1b9b41e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:31:40.658 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:31:40.868 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.20:31:41.016 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.20:31:41.103 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:31:41.111 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:31:41.156 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:31:41.318 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.20:31:41.356 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.20:31:41.362 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.20:31:41.366 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.20:31:41.373 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.20:31:41.378 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.20:31:41.383 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_list_mapper.xml]'
+26-03-12.20:31:41.389 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_mapper.xml]'
+26-03-12.20:31:41.393 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.20:31:41.397 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.20:31:41.940 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.20:31:42.332 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.20:31:42.361 [main            ] INFO  Link02Test             - Started Link02Test in 2.894 seconds (JVM running for 3.448)
+26-03-12.20:31:42.474 [main            ] INFO  RuleLogic201           - link model02 RuleLogic201
+26-03-12.20:31:42.474 [main            ] INFO  RuleLogic202           - link model02 RuleLogic202
+26-03-12.20:31:42.559 [main            ] INFO  Link02Test             - 测试结果:{"age":"hi 小傅哥！"}
+26-03-12.20:31:51.050 [main            ] INFO  Link02Test             - Starting Link02Test using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 28284 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.20:31:51.051 [main            ] INFO  Link02Test             - The following 1 profile is active: "dev"
+26-03-12.20:31:51.440 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.20:31:51.440 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.20:31:51.542 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.20:31:51.544 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.20:31:51.573 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderListDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.20:31:51.641 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderListDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderListDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderListDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.20:31:51.642 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.20:31:51.813 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$961b1108] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:31:51.992 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:31:52.203 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.20:31:52.348 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.20:31:52.437 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:31:52.445 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:31:52.484 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:31:52.644 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.20:31:52.684 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.20:31:52.689 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.20:31:52.694 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.20:31:52.700 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.20:31:52.704 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.20:31:52.709 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_list_mapper.xml]'
+26-03-12.20:31:52.714 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_mapper.xml]'
+26-03-12.20:31:52.718 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.20:31:52.721 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.20:31:53.298 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.20:31:53.691 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.20:31:53.722 [main            ] INFO  Link02Test             - Started Link02Test in 2.93 seconds (JVM running for 3.448)
+26-03-12.20:31:53.835 [main            ] INFO  RuleLogic201           - link model02 RuleLogic201
+26-03-12.20:31:53.835 [main            ] INFO  RuleLogic202           - link model02 RuleLogic202
+26-03-12.20:31:53.931 [main            ] INFO  Link02Test             - 测试结果:{"age":"hi 小傅哥！"}
+26-03-12.20:32:15.951 [main            ] INFO  Link02Test             - Starting Link02Test using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 7596 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-12.20:32:15.951 [main            ] INFO  Link02Test             - The following 1 profile is active: "dev"
+26-03-12.20:32:16.343 [main            ] DEBUG MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+26-03-12.20:32:16.343 [main            ] DEBUG MybatisAutoConfiguration - Using auto-configuration base package 'cn.bugstack'
+26-03-12.20:32:16.446 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-12.20:32:16.448 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-12.20:32:16.478 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+26-03-12.20:32:16.543 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDao.class]
+26-03-12.20:32:16.543 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsDetailDao.class]
+26-03-12.20:32:16.543 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ICrowdTagsJobDao.class]
+26-03-12.20:32:16.543 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyActivityDao.class]
+26-03-12.20:32:16.543 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyDiscountDao.class]
+26-03-12.20:32:16.543 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderDao.class]
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\IGroupBuyOrderListDao.class]
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISCSkuActivityDao.class]
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Identified candidate component class: file [D:\Learn\Java\group-buy-market\group-buy-market-infrastructure\target\classes\cn\bugstack\infrastructure\dao\ISkuDao.class]
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsDetailDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsDetailDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsDetailDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ICrowdTagsJobDao' and 'cn.bugstack.infrastructure.dao.ICrowdTagsJobDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ICrowdTagsJobDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyActivityDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyActivityDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyDiscountDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyDiscountDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyDiscountDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'IGroupBuyOrderListDao' and 'cn.bugstack.infrastructure.dao.IGroupBuyOrderListDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'IGroupBuyOrderListDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISCSkuActivityDao' and 'cn.bugstack.infrastructure.dao.ISCSkuActivityDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISCSkuActivityDao'.
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Creating MapperFactoryBean with name 'ISkuDao' and 'cn.bugstack.infrastructure.dao.ISkuDao' mapperInterface
+26-03-12.20:32:16.544 [main            ] DEBUG ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'ISkuDao'.
+26-03-12.20:32:16.694 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$6f7805ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:32:16.874 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:32:17.078 [main            ] INFO  Version                - Redisson 3.44.0
+26-03-12.20:32:17.221 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+26-03-12.20:32:17.309 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:32:17.318 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-03-12.20:32:17.356 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-03-12.20:32:17.525 [main            ] DEBUG SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis/config/mybatis-config.xml]'
+26-03-12.20:32:17.563 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_detail_mapper.xml]'
+26-03-12.20:32:17.569 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_job_mapper.xml]'
+26-03-12.20:32:17.574 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\crowd_tags_mapper.xml]'
+26-03-12.20:32:17.580 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_activity_mapper.xml]'
+26-03-12.20:32:17.585 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_discount_mapper.xml]'
+26-03-12.20:32:17.590 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_list_mapper.xml]'
+26-03-12.20:32:17.595 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\group_buy_order_mapper.xml]'
+26-03-12.20:32:17.599 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sc_sky_activity_mapper.xml]'
+26-03-12.20:32:17.602 [main            ] DEBUG SqlSessionFactoryBean  - Parsed mapper file: 'file [D:\Learn\Java\group-buy-market\group-buy-market-app\target\classes\mybatis\mapper\sku_mapper.xml]'
+26-03-12.20:32:18.143 [main            ] DEBUG MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+26-03-12.20:32:18.566 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-12.20:32:18.601 [main            ] INFO  Link02Test             - Started Link02Test in 2.92 seconds (JVM running for 3.437)
+26-03-12.20:32:18.714 [main            ] INFO  RuleLogic202           - link model02 RuleLogic202
+26-03-12.20:32:18.805 [main            ] INFO  Link02Test             - 测试结果:{"age":"hi 小傅哥！"}
