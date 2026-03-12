@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0af11f2-c42c-43ea-851d-fb6e54c403a2" name="更改" comment="feat: 完成折扣策略模式">
+      <change afterPath="$PROJECT_DIR$/group-buy-market-app/src/main/java/cn/bugstack/config/RedisClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-app/src/main/java/cn/bugstack/config/RedisClientConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-app/src/main/resources/mybatis/mapper/crowd_tags_job_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-app/src/main/resources/mybatis/mapper/crowd_tags_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-app/src/test/java/cn/bugstack/test/domain/tag/ITagServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/adapter/repository/ITagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/adapter/repository/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/model/entity/CrowdTagsJobEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/service/ITagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/TagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/ICrowdTagsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/ICrowdTagsDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/ICrowdTagsJobDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/CrowdTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/CrowdTagsDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/CrowdTagsJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/redis/IRedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/src/main/java/cn/bugstack/infrastructure/redis/RedissonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/yyy/adapter/repository/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-app/src/main/resources/mybatis/mapper/crowd_tags_detail_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/yyy/model/aggregate/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/model/aggregate/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/yyy/model/entity/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/model/entity/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/yyy/model/valobj/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/tag/model/valobj/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-domain/src/main/java/cn/bugstack/domain/yyy/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-market-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-market-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="260312-discount-calculate" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="GroupBuyActivityDaoTest.test_queryGroupBuyActivityList" />
+    </enabled-run-configurations>
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="E:\utils\apache-maven-3.9.9" />
+        <option name="localRepository" value="E:\utils\apache-maven-3.9.9\mvn_repo" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="E:\utils\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="21" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3Anbe0RPweWYHreJsnta24iTWhk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose 部署.executor": "Run",
+    "JUnit.GroupBuyActivityDaoTest.test_queryGroupBuyActivityList.executor": "Run",
+    "JUnit.GroupBuyDiscountDaoTest.executor": "Run",
+    "JUnit.GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList.executor": "Run",
+    "JUnit.IIndexGroupBuyMarketServiceTest (1).executor": "Run",
+    "JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial (1).executor": "Run",
+    "JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial (2).executor": "Run",
+    "JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial.executor": "Run",
+    "JUnit.ITagServiceTest.test_get_tag_bitmap.executor": "Run",
+    "JUnit.ITagServiceTest.test_tag_job.executor": "Run",
+    "JUnit.IndexGroupBuyMarketServiceTest.executor": "Run",
+    "JUnit.IndexGroupBuyMarketServiceTest.test_indexMarketTrial.executor": "Debug",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Learn/Java/group-buy-market/group-buy-market-app/src/main/resources/mybatis/mapper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learn\Java\group-buy-market\group-buy-market-app\src\main\resources\mybatis\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.bugstack.domain.tag.service" />
+      <recent name="cn.bugstack.infrastructure.dao" />
+      <recent name="cn.bugstack.infrastructure.dao.po" />
+      <recent name="cn.bugstack.domain.activity.service.discount.impl" />
+      <recent name="cn.bugstack.domain.activity.service.discount" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ITagServiceTest.test_get_tag_bitmap">
+    <configuration name="GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.infrastructure.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.infrastructure.dao" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.infrastructure.dao.GroupBuyDiscountDaoTest" />
+      <option name="METHOD_NAME" value="test_queryGroupBuyDiscountList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IIndexGroupBuyMarketServiceTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.domain.activity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.activity" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.activity.IIndexGroupBuyMarketServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IIndexGroupBuyMarketServiceTest.test_indexMarketTrial (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.domain.activity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.activity" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.activity.IIndexGroupBuyMarketServiceTest" />
+      <option name="METHOD_NAME" value="test_indexMarketTrial" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITagServiceTest.test_get_tag_bitmap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.domain.tag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.tag" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.tag.ITagServiceTest" />
+      <option name="METHOD_NAME" value="test_get_tag_bitmap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITagServiceTest.test_tag_job" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.domain.tag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.tag" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.tag.ITagServiceTest" />
+      <option name="METHOD_NAME" value="test_tag_job" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="group-buy-market-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ITagServiceTest.test_get_tag_bitmap" />
+        <item itemvalue="JUnit.ITagServiceTest.test_tag_job" />
+        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest (1)" />
+        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial (2)" />
+        <item itemvalue="JUnit.GroupBuyDiscountDaoTest.test_queryGroupBuyDiscountList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="b0af11f2-c42c-43ea-851d-fb6e54c403a2" name="更改" comment="" />
+      <created>1773231373328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773231373328</updated>
+      <workItem from="1773231373978" duration="1540000" />
+      <workItem from="1773278476078" duration="2990000" />
+      <workItem from="1773281504979" duration="55000" />
+      <workItem from="1773281571731" duration="59000" />
+      <workItem from="1773281649121" duration="44000" />
+      <workItem from="1773281705706" duration="269000" />
+      <workItem from="1773281999953" duration="7473000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: init">
+      <option name="closed" value="true" />
+      <created>1773279415991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773279415991</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 修改配置文件">
+      <option name="closed" value="true" />
+      <created>1773279582289</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773279582289</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 完成异步数据加载">
+      <option name="closed" value="true" />
+      <created>1773283650453</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773283650453</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: 完成折扣策略模式">
+      <option name="closed" value="true" />
+      <created>1773295009690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773295009690</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: init" />
+    <MESSAGE value="feat: 修改配置文件" />
+    <MESSAGE value="feat: 完成异步数据加载" />
+    <MESSAGE value="feat: 完成折扣策略模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 完成折扣策略模式" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+26-03-11.20:40:59.790 [main            ] INFO  GroupBuyActivityDaoTest - Starting GroupBuyActivityDaoTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 26828 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-11.20:40:59.791 [main            ] INFO  GroupBuyActivityDaoTest - The following 1 profile is active: "dev"
+26-03-11.20:41:00.772 [main            ] INFO  GroupBuyActivityDaoTest - Started GroupBuyActivityDaoTest in 1.235 seconds (JVM running for 1.863)
+26-03-11.20:42:02.665 [main            ] INFO  GroupBuyActivityDaoTest - Starting GroupBuyActivityDaoTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 5708 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-11.20:42:02.666 [main            ] INFO  GroupBuyActivityDaoTest - The following 1 profile is active: "dev"
+26-03-11.20:42:03.769 [main            ] INFO  GroupBuyActivityDaoTest - Started GroupBuyActivityDaoTest in 1.381 seconds (JVM running for 1.914)
+26-03-11.20:42:03.901 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-11.20:42:04.226 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-11.20:42:04.249 [main            ] INFO  GroupBuyActivityDaoTest - 查询结果：[GroupBuyActivity(id=1, activityId=100123, activityName=测试活动, source=s01, channel=c01, goodsId=9890001, discountId=25120207, groupType=0, takeLimitCount=1, target=1, validTime=15, status=0, startTime=2024-12-07T10:19:40, endTime=2024-12-07T10:19:40, tagId=1, tagScope=1, createTime=2024-12-07T10:19:40, updateTime=2024-12-07T11:47:27)]
+26-03-11.20:42:04.254 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-11.20:42:04.256 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-03-11.20:42:20.932 [main            ] INFO  GroupBuyDiscountDaoTest - Starting GroupBuyDiscountDaoTest using Java 1.8.0_391 on CHINAMI-OTTQEV9 with PID 23216 (started by Administrator in D:\Learn\Java\group-buy-market\group-buy-market-app)
+26-03-11.20:42:20.933 [main            ] INFO  GroupBuyDiscountDaoTest - The following 1 profile is active: "dev"
+26-03-11.20:42:21.955 [main            ] INFO  GroupBuyDiscountDaoTest - Started GroupBuyDiscountDaoTest in 1.27 seconds (JVM running for 1.766)
+26-03-11.20:42:22.069 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-03-11.20:42:22.357 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-03-11.20:42:22.381 [main            ] INFO  GroupBuyDiscountDaoTest - 查询结果：[GroupBuyDiscount(id=1, discountId=25120207, discountName=测试优惠, discountDesc=测试优惠, discountType=0, marketPlan=ZJ, marketExpr=20, tagId=null, createTime=2024-12-07T10:20:15, updateTime=2024-12-07T10:20:15)]
+26-03-11.20:42:22.386 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-03-11.20:42:22.388 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
