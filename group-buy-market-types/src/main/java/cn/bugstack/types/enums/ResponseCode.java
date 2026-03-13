@@ -13,6 +13,7 @@ public enum ResponseCode {
     ILLEGAL_PARAMETER("0002", "非法参数"),
     INDEX_EXCEPTION("0003", "唯一索引冲突"),
     UPDATE_ZERO("0004", "更新记录为0"),
+    HTTP_EXCEPTION("0005", "HTTP接口调用异常"),
 
     E0001("E0001", "不存在对应的折扣计算服务"),
     E0002("E0002", "无拼团营销配置"),
@@ -29,8 +30,6 @@ public enum ResponseCode {
     E0105("E0105", "SC渠道黑名单拦截"),
     E0106("E0106", "订单交易时间不在拼团有效时间范围内"),
     ;
-
-
     private String code;
     private String info;
 
