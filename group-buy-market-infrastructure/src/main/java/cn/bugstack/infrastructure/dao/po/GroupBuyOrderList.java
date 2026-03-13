@@ -61,6 +61,10 @@ public class GroupBuyOrderList extends Page {
      */
     private BigDecimal deductionPrice;
     /**
+     * 支付金额
+     */
+    private BigDecimal payPrice;
+    /**
      * 状态；0初始锁定、1消费完成
      */
     private Integer status;
@@ -69,6 +73,14 @@ public class GroupBuyOrderList extends Page {
      */
     private String outTradeNo;
     /**
+     * 外部交易时间
+     */
+    private Date outTradeTime;
+    /**
+     * 唯一业务ID
+     */
+    private String bizId;
+    /**
      * 创建时间
      */
     private Date createTime;
@@ -76,9 +88,4 @@ public class GroupBuyOrderList extends Page {
      * 更新时间
      */
     private Date updateTime;
-
-    /**
-     * 唯一业务ID
-     */
-    private String bizId;
 }
