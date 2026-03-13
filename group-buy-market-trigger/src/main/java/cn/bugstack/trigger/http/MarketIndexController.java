@@ -24,7 +24,7 @@ import java.util.List;
 
 @Slf4j
 @RestController()
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/gbm/index/")
 public class MarketIndexController implements IMarketIndexService {
     @Resource
