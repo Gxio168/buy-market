@@ -32,8 +32,9 @@
 
     <update id="updateOrderStatus2COMPLETE" parameterType="cn.bugstack.infrastructure.dao.po.GroupBuyOrderList">
         update group_buy_order_list
-        set status      = 1,
-            update_time = now()
+        set status         = 1,
+            update_time    = now(),
+            out_trade_time = now()
         where out_trade_no = #{outTradeNo}
           and user_id = #{userId}
     </update>

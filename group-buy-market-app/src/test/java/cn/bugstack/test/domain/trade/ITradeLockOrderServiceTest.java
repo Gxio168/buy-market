@@ -37,7 +37,7 @@ public class ITradeLockOrderServiceTest {
         String goodsId = "9890001";
         String source = "s01";
         String channel = "c01";
-        String outTradeNo = "909000098114";
+        String outTradeNo = "909000098111";
 
         // 1. 获取试算优惠，有【activityId】优先使用
         TrialBalanceEntity trialBalanceEntity = indexGroupBuyMarketService.indexMarketTrial(MarketProductEntity.builder()
@@ -61,12 +61,13 @@ public class ITradeLockOrderServiceTest {
         MarketPayOrderEntity marketPayOrderEntityNew = tradeOrderService.lockMarketPayOrder(
                 UserEntity.builder().userId(userId).build(),
                 PayActivityEntity.builder()
-                        .teamId("35582381")
+                        .teamId(null)
                         .activityId(groupBuyActivityDiscountVO.getActivityId())
                         .activityName(groupBuyActivityDiscountVO.getActivityName())
                         .startTime(groupBuyActivityDiscountVO.getStartTime())
                         .endTime(groupBuyActivityDiscountVO.getEndTime())
                         .targetCount(groupBuyActivityDiscountVO.getTarget())
+                        .validTime(groupBuyActivityDiscountVO.getValidTime())
                         .build(),
                 PayDiscountEntity.builder()
                         .source(source)

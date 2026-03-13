@@ -1,7 +1,11 @@
 package cn.bugstack.domain.trade.model.entity;
 
+
 import cn.bugstack.types.enums.GroupBuyOrderEnumVO;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -9,7 +13,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupBuyTeamEntity {
+public class TradeSettlementRuleFilterBackEntity {
 
     /**
      * 拼单组队ID
@@ -32,16 +36,15 @@ public class GroupBuyTeamEntity {
      */
     private Integer lockCount;
     /**
-     * 有效开始时间
-     */
-    private Date validStartTime;
-    /**
-     * 有效结束时间
-     */
-    private Date validEndTime;
-    /**
      * 状态（0-拼单中、1-完成、2-失败）
      */
     private GroupBuyOrderEnumVO status;
-
+    /**
+     * 拼团开始时间 - 参与拼团时间
+     */
+    private Date validStartTime;
+    /**
+     * 拼团结束时间 - 拼团有效时长
+     */
+    private Date validEndTime;
 }

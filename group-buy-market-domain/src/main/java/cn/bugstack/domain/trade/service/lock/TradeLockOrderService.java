@@ -20,7 +20,7 @@ public class TradeLockOrderService implements ITradeLockOrderService {
     private ITradeRepository repository;
 
     @Resource
-    private BusinessLinkedList<TradeRuleCommandEntity, TradeRuleFilterFactory.DynamicContext, TradeRuleFilterBackEntity> tradeRuleFilter;
+    private BusinessLinkedList<TradeLockRuleCommandEntity, TradeRuleFilterFactory.DynamicContext, TradeLockRuleFilterBackEntity> tradeRuleFilter;
 
     @Override
     public MarketPayOrderEntity queryNoPayMarketPayOrderByOutTradeNo(String userId, String outTradeNo) {
@@ -39,7 +39,7 @@ public class TradeLockOrderService implements ITradeLockOrderService {
         log.info("拼团交易-锁定营销优惠支付订单:{} activityId:{} goodsId:{}", userEntity.getUserId(), payActivityEntity.getActivityId(), payDiscountEntity.getGoodsId());
 
         // 交易规则过滤
-        TradeRuleFilterBackEntity tradeRuleFilterBackEntity = tradeRuleFilter.apply(TradeRuleCommandEntity.builder()
+        TradeLockRuleFilterBackEntity tradeLockRuleFilterBackEntity = tradeRuleFilter.apply(TradeLockRuleCommandEntity.builder()
                         .activityId(payActivityEntity.getActivityId())
                         .userId(userEntity.getUserId())
                         .build(),
@@ -50,7 +50,7 @@ public class TradeLockOrderService implements ITradeLockOrderService {
                 .userEntity(userEntity)
                 .payActivityEntity(payActivityEntity)
                 .payDiscountEntity(payDiscountEntity)
-                .userTakeOrderCount(tradeRuleFilterBackEntity.getUserTakeOrderCount())
+                .userTakeOrderCount(tradeLockRuleFilterBackEntity.getUserTakeOrderCount())
                 .build();
 
 

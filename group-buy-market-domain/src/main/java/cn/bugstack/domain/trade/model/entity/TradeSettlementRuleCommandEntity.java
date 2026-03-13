@@ -1,5 +1,6 @@
 package cn.bugstack.domain.trade.model.entity;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +12,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TradePaySuccessEntity {
+public class TradeSettlementRuleCommandEntity {
 
     /**
      * 渠道
@@ -33,5 +34,4 @@ public class TradePaySuccessEntity {
      * 外部交易时间
      */
     private Date outTradeTime;
-
 }
