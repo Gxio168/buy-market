@@ -1,4 +1,4 @@
-package cn.bugstack.domain.trade.service.filter;
+package cn.bugstack.domain.trade.service.lock.filter;
 
 import cn.bugstack.domain.trade.adapter.repository.ITradeRepository;
 import cn.bugstack.domain.trade.model.entity.GroupBuyActivityEntity;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import cn.bugstack.domain.trade.model.entity.TradeRuleCommandEntity;
 import cn.bugstack.domain.trade.model.entity.TradeRuleFilterBackEntity;
-import cn.bugstack.domain.trade.service.factory.TradeRuleFilterFactory;
+import cn.bugstack.domain.trade.service.lock.factory.TradeRuleFilterFactory;
 import cn.bugstack.types.design.framework.link.model2.handler.ILogicHandler;
 
 import javax.annotation.Resource;

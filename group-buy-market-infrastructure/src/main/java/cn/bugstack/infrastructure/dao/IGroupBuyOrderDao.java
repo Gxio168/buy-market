@@ -3,11 +3,6 @@ package cn.bugstack.infrastructure.dao;
 import cn.bugstack.infrastructure.dao.po.GroupBuyOrder;
 import org.apache.ibatis.annotations.Mapper;
 
-/**
- * @author Fuzhengwei bugstack.cn @小傅哥
- * @description 商品查询
- * @create 2024-12-21 10:48
- */
 @Mapper
 public interface IGroupBuyOrderDao {
     void insert(GroupBuyOrder groupBuyOrder);
@@ -18,4 +13,9 @@ public interface IGroupBuyOrderDao {
 
     GroupBuyOrder queryGroupBuyProgress(String teamId);
 
+    GroupBuyOrder queryGroupBuyTeamByTeamId(String teamId);
+
+    int updateAddCompleteCount(String teamId);
+
+    int updateOrderStatus2COMPLETE(String teamId);
 }

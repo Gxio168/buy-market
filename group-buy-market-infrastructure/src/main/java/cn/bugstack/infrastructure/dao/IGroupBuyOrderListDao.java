@@ -3,11 +3,8 @@ package cn.bugstack.infrastructure.dao;
 import cn.bugstack.infrastructure.dao.po.GroupBuyOrderList;
 import org.apache.ibatis.annotations.Mapper;
 
-/**
- * @author Fuzhengwei bugstack.cn @小傅哥
- * @description 商品查询
- * @create 2024-12-21 10:48
- */
+import java.util.List;
+
 @Mapper
 public interface IGroupBuyOrderListDao {
 
@@ -16,4 +13,8 @@ public interface IGroupBuyOrderListDao {
     GroupBuyOrderList queryGroupBuyOrderRecordByOutTradeNo(GroupBuyOrderList groupBuyOrderListReq);
 
     Integer queryOrderCountByActivityId(GroupBuyOrderList groupBuyOrderListReq);
+
+    int updateOrderStatus2COMPLETE(GroupBuyOrderList groupBuyOrderListReq);
+
+    List<String> queryGroupBuyCompleteOrderOutTradeNoListByTeamId(String teamId);
 }
