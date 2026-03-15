@@ -1,5 +1,6 @@
 package cn.bugstack.domain.trade.model.entity;
 
+import cn.bugstack.domain.trade.model.valobj.NotifyConfigVO;
 import cn.bugstack.types.enums.GroupBuyOrderEnumVO;
 import lombok.*;
 
@@ -44,8 +45,8 @@ public class GroupBuyTeamEntity {
      */
     private GroupBuyOrderEnumVO status;
     /**
-     * 回调地址
+     * 回调配置
      */
-    private String notifyUrl;
+    private NotifyConfigVO notifyConfigVO;
 
 }

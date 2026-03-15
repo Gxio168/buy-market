@@ -1,5 +1,6 @@
 package cn.bugstack.domain.trade.model.entity;
 
+import cn.bugstack.domain.trade.model.valobj.NotifyConfigVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -49,4 +50,8 @@ public class PayDiscountEntity {
      * 回调地址
      */
     private String notifyUrl;
+    /**
+     * 回调配置
+     */
+    private NotifyConfigVO notifyConfigVO;
 }

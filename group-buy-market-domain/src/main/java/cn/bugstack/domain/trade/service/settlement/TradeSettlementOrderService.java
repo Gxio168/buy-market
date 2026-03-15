@@ -8,14 +8,17 @@ import cn.bugstack.domain.trade.service.ITradeSettlementOrderService;
 import cn.bugstack.domain.trade.service.settlement.factory.TradeSettlementRuleFilterFactory;
 import cn.bugstack.types.design.framework.link.model2.chain.BusinessLinkedList;
 import cn.bugstack.types.enums.NotifyTaskHTTPEnumVO;
+import cn.bugstack.types.exception.AppException;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ThreadPoolExecutor;
 
 
 @Slf4j
@@ -26,6 +29,8 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
     private ITradeRepository repository;
     @Resource
     private ITradePort port;
+    @Resource
+    private ThreadPoolExecutor threadPoolExecutor;
 
     @Resource
     private BusinessLinkedList<TradeSettlementRuleCommandEntity, TradeSettlementRuleFilterFactory.DynamicContext, TradeSettlementRuleFilterBackEntity> tradeSettlementRuleFilter;
@@ -34,15 +39,11 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
     public TradePaySettlementEntity settlementMarketPayOrder(TradePaySuccessEntity tradePaySuccessEntity) throws Exception {
         log.info("拼团交易-支付订单结算:{} outTradeNo:{}", tradePaySuccessEntity.getUserId(), tradePaySuccessEntity.getOutTradeNo());
         // 结算规则过滤
-        TradeSettlementRuleFilterBackEntity tradeSettlementRuleFilterBackEntity = tradeSettlementRuleFilter.apply(
-                TradeSettlementRuleCommandEntity.builder()
-                        .source(tradePaySuccessEntity.getSource())
-                        .channel(tradePaySuccessEntity.getChannel())
-                        .userId(tradePaySuccessEntity.getUserId())
-                        .outTradeNo(tradePaySuccessEntity.getOutTradeNo())
-                        .outTradeTime(tradePaySuccessEntity.getOutTradeTime())
-                        .build(),
-                new TradeSettlementRuleFilterFactory.DynamicContext());
+        TradeSettlementRuleFilterBackEntity tradeSettlementRuleFilterBackEntity = tradeSettlementRuleFilter.apply(TradeSettlementRuleCommandEntity.builder()
+                .source(tradePaySuccessEntity.getSource()).channel(tradePaySuccessEntity.getChannel())
+                .userId(tradePaySuccessEntity.getUserId()).outTradeNo(tradePaySuccessEntity.getOutTradeNo())
+                .outTradeTime(tradePaySuccessEntity.getOutTradeTime())
+                .build(), new TradeSettlementRuleFilterFactory.DynamicContext());
 
         String teamId = tradeSettlementRuleFilterBackEntity.getTeamId();
 
@@ -56,30 +57,31 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .status(tradeSettlementRuleFilterBackEntity.getStatus())
                 .validStartTime(tradeSettlementRuleFilterBackEntity.getValidStartTime())
                 .validEndTime(tradeSettlementRuleFilterBackEntity.getValidEndTime())
-                .notifyUrl(tradeSettlementRuleFilterBackEntity.getNotifyUrl())
-                .build();
+                .notifyConfigVO(tradeSettlementRuleFilterBackEntity.getNotifyConfigVO()).build();
 
         // 构建聚合对象
         GroupBuyTeamSettlementAggregate groupBuyTeamSettlementAggregate = GroupBuyTeamSettlementAggregate.builder()
                 .userEntity(UserEntity.builder().userId(tradePaySuccessEntity.getUserId()).build())
-                .groupBuyTeamEntity(groupBuyTeamEntity)
-                .tradePaySuccessEntity(tradePaySuccessEntity)
-                .build();
+                .groupBuyTeamEntity(groupBuyTeamEntity).tradePaySuccessEntity(tradePaySuccessEntity).build();
 
         // 拼团交易结算, 并判断是否需要进行拼团完成的任务
-        boolean isNotify = repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
-        if (isNotify) {
-            Map<String, Integer> notifyResultMap = execSettlementNotifyJob(teamId);
-            log.info("回调通知拼团完结 result:{}", JSON.toJSONString(notifyResultMap));
+        NotifyTaskEntity notifyTaskEntity = repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
+        if (null != notifyTaskEntity) {
+            threadPoolExecutor.execute(() -> {
+                Map<String, Integer> notifyResultMap = null;
+                try {
+                    notifyResultMap = execSettlementNotifyJob(notifyTaskEntity);
+                    log.info("回调通知拼团完结 result:{}", JSON.toJSONString(notifyResultMap));
+                } catch (Exception e) {
+                    log.error("回调通知拼团完结失败 result:{}", JSON.toJSONString(notifyResultMap), e);
+                    throw new AppException(e.getMessage());
+                }
+            });
         }
         // 返回结算信息
-        return TradePaySettlementEntity.builder()
-                .source(tradePaySuccessEntity.getSource())
-                .channel(tradePaySuccessEntity.getChannel())
-                .userId(tradePaySuccessEntity.getUserId())
-                .teamId(teamId)
-                .activityId(groupBuyTeamEntity.getActivityId())
-                .outTradeNo(tradePaySuccessEntity.getOutTradeNo())
+        return TradePaySettlementEntity.builder().source(tradePaySuccessEntity.getSource())
+                .channel(tradePaySuccessEntity.getChannel()).userId(tradePaySuccessEntity.getUserId()).teamId(teamId)
+                .activityId(groupBuyTeamEntity.getActivityId()).outTradeNo(tradePaySuccessEntity.getOutTradeNo())
                 .build();
     }
 
@@ -97,6 +99,12 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
         List<NotifyTaskEntity> notifyTaskEntityList = repository.queryUnExecutedNotifyTaskList();
 
         return execSettlementNotifyJob(notifyTaskEntityList);
+    }
+
+    @Override
+    public Map<String, Integer> execSettlementNotifyJob(NotifyTaskEntity notifyTaskEntity) throws Exception {
+        log.info("拼团交易-执行结算通知回调，指定 teamId:{} notifyTaskEntity:{}", notifyTaskEntity.getTeamId(), JSON.toJSONString(notifyTaskEntity));
+        return execSettlementNotifyJob(Collections.singletonList(notifyTaskEntity));
     }
 
     /**

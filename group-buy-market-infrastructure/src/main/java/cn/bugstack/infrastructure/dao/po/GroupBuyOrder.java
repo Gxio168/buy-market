@@ -74,9 +74,12 @@ public class GroupBuyOrder {
      * 更新时间
      */
     private Date updateTime;
-
     /**
      * 回调地址
      */
     private String notifyUrl;
+    /**
+     * 回调类型 HTTP、MQ
+     */
+    private String notifyType;
 }
