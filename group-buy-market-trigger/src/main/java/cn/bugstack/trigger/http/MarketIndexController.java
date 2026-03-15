@@ -100,6 +100,7 @@ public class MarketIndexController implements IMarketIndexService {
                             .goods(goods)
                             .teamList(teams)
                             .teamStatistic(teamStatistic)
+                            .activityId(activityId)
                             .build())
                     .build();
 

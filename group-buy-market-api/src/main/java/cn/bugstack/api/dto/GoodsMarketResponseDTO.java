@@ -22,6 +22,8 @@ public class GoodsMarketResponseDTO {
     private List<Team> teamList;
     // 组队统计
     private TeamStatistic teamStatistic;
+    // 活动id
+    private Long activityId;
 
     /**
      * 商品信息
