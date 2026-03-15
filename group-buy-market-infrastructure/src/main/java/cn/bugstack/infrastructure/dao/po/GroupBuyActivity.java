@@ -2,7 +2,6 @@ package cn.bugstack.infrastructure.dao.po;
 
 import lombok.*;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -72,4 +71,13 @@ public class GroupBuyActivity {
      */
     private Date updateTime;
 
+    /**
+     * 获取活动缓存可以
+     *
+     * @param activityId 活动id
+     * @return 缓存key
+     */
+    public static String cacheRedisKey(Long activityId) {
+        return "group_buy_market_cn.bugstack.infrastructure.dao.po.GroupBuyActivity_" + activityId;
+    }
 }

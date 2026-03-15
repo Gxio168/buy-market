@@ -23,6 +23,17 @@ public class DCCService {
     @DCCValue("scBlacklist:s02c02")
     private String scBlacklist;
 
+    // redis缓存， 0为开启，1为关闭
+    @DCCValue("cacheSwitch:0")
+    private String cacheOpenSwitch;
+
+    /**
+     * 缓存开启开关，0为开启，1为关闭
+     */
+    public boolean isCacheOpenSwitch() {
+        return "0".equals(cacheOpenSwitch);
+    }
+
     public boolean isDowngradeSwitch() {
         return "1".equals(downgradeSwitch);
     }
