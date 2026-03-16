@@ -29,4 +29,6 @@ public interface IGroupBuyOrderDao {
     Integer queryAllTeamCompleteCount(Set<String> teamIds);
 
     Integer queryAllUserCount(Set<String> teamIds);
+
+    int unpaid2Refund(GroupBuyOrder groupBuyOrderReq);
 }
