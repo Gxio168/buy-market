@@ -1,6 +1,5 @@
 package cn.bugstack.domain.trade.model.valobj;
 
-import cn.bugstack.domain.trade.model.entity.TradeRefundOrderEntity;
 import cn.bugstack.types.enums.GroupBuyOrderEnumVO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
