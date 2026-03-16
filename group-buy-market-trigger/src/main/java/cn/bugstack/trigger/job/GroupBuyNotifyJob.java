@@ -1,7 +1,7 @@
 package cn.bugstack.trigger.job;
 
 
-import cn.bugstack.domain.trade.service.ITradeSettlementOrderService;
+import cn.bugstack.domain.trade.service.ITradeTaskService;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
@@ -17,9 +17,9 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class GroupBuyNotifyJob {
     @Resource
-    private ITradeSettlementOrderService tradeSettlementOrderService;
-    @Resource
     private RedissonClient redissonClient;
+    @Resource
+    private ITradeTaskService tradeTaskService;
 
     @Scheduled(cron = "0 0 0 * * ?")
     public void exec() {
@@ -28,7 +28,7 @@ public class GroupBuyNotifyJob {
             // 分布式锁
             boolean isLocked = lock.tryLock(3, 0, TimeUnit.SECONDS);
             if (!isLocked) return;
-            Map<String, Integer> result = tradeSettlementOrderService.execSettlementNotifyJob();
+            Map<String, Integer> result = tradeTaskService.execNotifyJob();
             log.info("定时任务，回调通知拼团完结任务 result:{}", JSON.toJSONString(result));
         } catch (Exception e) {
             log.error("定时任务，回调通知拼团完结任务失败", e);
