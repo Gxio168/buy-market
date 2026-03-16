@@ -1,6 +1,6 @@
 package cn.bugstack.domain.trade.model.valobj;
 
-
+import cn.bugstack.domain.trade.model.entity.TradeRefundOrderEntity;
 import cn.bugstack.types.enums.GroupBuyOrderEnumVO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.Arrays;
 
+/**
+ * 退单类型枚举
+ */
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -30,7 +33,9 @@ public enum RefundTypeEnumVO {
     PAID_FORMED("paid_formed", "paidTeam2RefundStrategy", "已支付，已成团") {
         @Override
         public boolean matches(GroupBuyOrderEnumVO groupBuyOrderEnumVO, TradeOrderStatusEnumVO tradeOrderStatusEnumVO) {
-            return GroupBuyOrderEnumVO.COMPLETE.equals(groupBuyOrderEnumVO) && TradeOrderStatusEnumVO.COMPLETE.equals(tradeOrderStatusEnumVO);
+            // 完成、完成含退单，都做此处理
+            return (GroupBuyOrderEnumVO.COMPLETE.equals(groupBuyOrderEnumVO) || GroupBuyOrderEnumVO.COMPLETE_FAIL.equals(groupBuyOrderEnumVO))
+                    && TradeOrderStatusEnumVO.COMPLETE.equals(tradeOrderStatusEnumVO);
         }
     },
     ;

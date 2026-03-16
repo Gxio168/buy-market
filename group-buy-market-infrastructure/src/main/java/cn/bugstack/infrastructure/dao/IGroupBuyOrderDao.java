@@ -33,4 +33,8 @@ public interface IGroupBuyOrderDao {
     int unpaid2Refund(GroupBuyOrder groupBuyOrderReq);
 
     int paid2Refund(GroupBuyOrder groupBuyOrderReq);
+
+    int paidTeam2Refund(GroupBuyOrder groupBuyOrderReq);
+
+    int paidTeam2RefundFail(GroupBuyOrder groupBuyOrderReq);
 }
