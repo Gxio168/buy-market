@@ -85,3 +85,7 @@ logging:
     root: info
     org.mybatis: DEBUG
   config: classpath:logback-spring.xml
+
+# 日志；logstash部署的服务器IP
+logstash:
+  host: 127.0.0.1
