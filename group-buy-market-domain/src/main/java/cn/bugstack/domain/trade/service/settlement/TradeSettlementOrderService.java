@@ -1,6 +1,5 @@
 package cn.bugstack.domain.trade.service.settlement;
 
-import cn.bugstack.domain.trade.adapter.port.ITradePort;
 import cn.bugstack.domain.trade.adapter.repository.ITradeRepository;
 import cn.bugstack.domain.trade.model.aggregate.GroupBuyTeamSettlementAggregate;
 import cn.bugstack.domain.trade.model.entity.*;
@@ -24,8 +23,6 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
 
     @Resource
     private ITradeRepository repository;
-    @Resource
-    private ITradePort port;
     @Resource
     private ThreadPoolExecutor threadPoolExecutor;
     @Resource

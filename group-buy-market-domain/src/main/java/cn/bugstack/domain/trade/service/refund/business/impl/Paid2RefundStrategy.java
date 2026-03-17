@@ -1,11 +1,12 @@
 package cn.bugstack.domain.trade.service.refund.business.impl;
 
-import cn.bugstack.domain.trade.adapter.port.ITradePort;
 import cn.bugstack.domain.trade.adapter.repository.ITradeRepository;
 import cn.bugstack.domain.trade.model.aggregate.GroupBuyRefundAggregate;
 import cn.bugstack.domain.trade.model.entity.NotifyTaskEntity;
 import cn.bugstack.domain.trade.model.entity.TradeRefundOrderEntity;
+import cn.bugstack.domain.trade.model.valobj.TeamRefundSuccess;
 import cn.bugstack.domain.trade.service.ITradeTaskService;
+import cn.bugstack.domain.trade.service.lock.factory.TradeLockRuleFilterFactory;
 import cn.bugstack.domain.trade.service.refund.business.IRefundOrderStrategy;
 import cn.bugstack.types.exception.AppException;
 import com.alibaba.fastjson.JSON;
@@ -27,9 +28,6 @@ public class Paid2RefundStrategy implements IRefundOrderStrategy {
     private ITradeRepository repository;
 
     @Resource
-    private ITradePort port;
-
-    @Resource
     private ITradeTaskService tradeTaskService;
 
     @Resource
@@ -48,12 +46,22 @@ public class Paid2RefundStrategy implements IRefundOrderStrategy {
                 Map<String, Integer> notifyResultMap = null;
                 try {
                     notifyResultMap = tradeTaskService.execNotifyJob(notifyTaskEntity);
-                    log.info("回调通知交易退单 result:{}", JSON.toJSONString(notifyResultMap));
+                    log.info("回调通知交易退单(已支付，未成团) result:{}", JSON.toJSONString(notifyResultMap));
                 } catch (Exception e) {
-                    log.error("回调通知交易退单失败 result:{}", JSON.toJSONString(notifyResultMap), e);
+                    log.error("回调通知交易退单失败(已支付，未成团) result:{}", JSON.toJSONString(notifyResultMap), e);
                     throw new AppException(e.getMessage());
                 }
             });
         }
+    }
+
+    @Override
+    public void reverseStock(TeamRefundSuccess teamRefundSuccess) throws Exception {
+        log.info("退单；恢复锁单量 - 已支付，未成团，但有锁单记录，要恢复锁单库存 {} {} {}", teamRefundSuccess.getUserId(), teamRefundSuccess.getActivityId(), teamRefundSuccess.getTeamId());
+        // 1. 恢复库存key
+        String recoveryTeamStockKey = TradeLockRuleFilterFactory.generateRecoveryTeamStockKey(teamRefundSuccess.getActivityId(), teamRefundSuccess.getTeamId());
+        // 2. 退单恢复「已支付，未成团，有锁单记录，要恢复锁单库存」
+        repository.refund2AddRecovery(recoveryTeamStockKey, teamRefundSuccess.getOrderId());
+
     }
 }
